@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Storage Api</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 50%;
+        }
+        tr:nth-child(even){
+            background-color: rgb(204, 149, 255);
+        }
+        td{
+            text-align: center;
+        }
+        th{
+            background-color: rgb(142, 21, 255);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="getdata()">Get Data</button>
+    <button onclick="Removedata()">Remove Data</button>
+
+    <table>
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    
+</body>
+<script src="index.js"></script>
+</html>
