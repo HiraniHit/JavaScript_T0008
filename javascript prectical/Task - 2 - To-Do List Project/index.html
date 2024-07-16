@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/fontawesome.min.css"
+            integrity="sha512-UuQ/zJlbMVAw/UU8vVBhnI4op+/tFOpQZVT+FormmIEhRSCnJWyHiBbEVgM4Uztsht41f3FzVWgLuwzUqOObKw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="index.css" />
+        <title>To-do</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="search-input">
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    placeholder="Add Task"
+                />
+                <button onclick="addTask()">+</button>
+            </div>
+            <div class="panding-btn">
+                <button onclick="setFilter('all')">ALL</button>
+                <button onclick="setFilter('pending')">Pending</button>
+                <button onclick="setFilter('completed')">completed</button>
+            </div>
+            <ul id="task-list"></ul>
+            <div class="greeting"><p>Good luck for your work</p></div>
+        </div>
+    </body>
+
+    <script src="index.js"></script>
+</html>
