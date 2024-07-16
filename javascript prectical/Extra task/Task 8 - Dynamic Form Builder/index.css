@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#form {
+    height: auto;
+    width: fit-content;
+    background-color: #1679ab;
+    padding: 40px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    color: white;
+}
+
+#form > div > input {
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+
+#form > div {
+    display: flex;
+    align-items: center;
+}
+
+.input-data {
+    background-color: #102c57;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.input-data > input {
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+}
+.input-data > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input-data > div > button {
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(168, 210, 247);
+    width: 100%;
+}
+.input-data > button:hover {
+    background-color: rgb(93, 166, 229);
+    color: white;
+}
+input,
+button {
+    max-width: 200px;
+}
+button {
+    max-width: 100px;
+}
+
+.hide {
+    display: none;
+}
