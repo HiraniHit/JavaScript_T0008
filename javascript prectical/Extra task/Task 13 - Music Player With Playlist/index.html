@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <title>Music Player</title>
+    </head>
+    <body>
+        <div class="header-player">
+            <button class="add-song-btn" onclick="displayForm()">
+                Add song
+            </button>
+            <form id="addSongForm" class="hide">
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Song Title"
+                    required
+                />
+                <input
+                    type="text"
+                    id="artist"
+                    placeholder="Artist Name"
+                    required
+                />
+                <input type="url" id="url" placeholder="Song URL" required />
+                <input
+                    type="url"
+                    id="artwork"
+                    placeholder="Artwork URL"
+                    required
+                />
+                <button class="newSong-add-btn" type="submit">Add Song</button>
+            </form>
+            <button class="play-playlist-btn" onclick="showPlaylist()">
+                Show Playlist
+            </button>
+        </div>
+
+        <div class="main-container">
+            <div class="all-song"></div>
+            <div class="container">
+                <div class="music-player"></div>
+                <div class="next-prevBtn">
+                    <button class="prev-btn btn">&#8249;</button>
+                    <button class="shuffle-btn btn" onclick="shuffleSong()">
+                        &#8651;
+                    </button>
+                    <button class="next-btn btn">&#8250;</button>
+                </div>
+            </div>
+            <div class="playlist"></div>
+        </div>
+    </body>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</html>
