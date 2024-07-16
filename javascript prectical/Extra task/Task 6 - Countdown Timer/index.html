@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Countdown Timer</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="warpper">
+                <input
+                    type="text"
+                    id="time"
+                    placeholder="Enter a Number"
+                    required
+                />
+                <button class="start-btn" onclick="startTimer()">Start</button>
+            </div>
+            <div class="warpper-timmer">
+                <div class="timmer">Coundown start</div>
+            </div>
+        </div>
+    </body>
+    <script>
+        let startTimer = () => {
+            let time = Number(document.querySelector("#time").value);
+            let timmer = document.querySelector(".timmer");
+            let num = 0;
+            num = time;
+            document.querySelector(".start-btn").setAttribute("disabled", "");
+            setInterval(() => {
+                if (num >= 0) {
+                    timmer.innerHTML = `Remaining Time : ${num}s `;
+                    num == 0 ? window.location.reload() : num--;
+                }
+            }, 1000);
+        };
+    </script>
+</html>
