@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    max-height: 450px;
+    height: auto;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #def9c4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.search-input {
+    padding: 5px 0;
+}
+button {
+    padding: 10px 16px;
+    border: none;
+    outline: none;
+    background-color: #468585;
+    color: white;
+}
+input {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+}
+.panding-btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    padding: 12px 0;
+}
+.panding-btn > button {
+    background-color: #50b498;
+    color: black;
+}
+#task-list {
+    padding: 12px 0 12px 0;
+    display: flex;
+    height: 250px;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid rgb(146, 146, 146);
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+#task-list > .li-info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+#task-list > .li-info > div > button {
+    padding: 8px 16px;
+}
+li {
+    text-decoration: none;
+}
+.greeting {
+    color: #163c3c;
+    font-size: 17px;
+    position: absolute;
+    bottom: 7px;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+}
+.li-info.dragging {
+    opacity: 0.4;
+}
+
+.drag-handle {
+    cursor: move;
+}
