@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Data Analysis Dashboard</title>
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main-container">
+            <nav>
+                <div>LOGO</div>
+                <ul>
+                    <li><a href="#filter">Filter Product</a></li>
+                    <li><a href="#canvas">Product & Sales</a></li>
+                    <li><a href="#canvas2">Product Category & Sales</a></li>
+                    <li><a href="#canvas3">Product Stock</a></li>
+                    <li><a href="#canvas4">Average Sales</a></li>
+                    <li><a href="#canvas5">Monthly Sales</a></li>
+                    <li><a href="#canvas6">Sales and Stock</a></li>
+                </ul>
+            </nav>
+
+            <div class="main-canvas">
+                <button class="filter-btn" onclick="openFilterForm()">
+                    Filter Data
+                </button>
+                <div class="inputs hide">
+                    <select name="cars" id="firstInput">
+                        <option class="name" value="name">name</option>
+                        <option value="category">category</option>
+                    </select>
+                    <select name="cars" id="secondInput">
+                        <option value="price">price</option>
+                        <option value="stock">stock</option>
+                        <option value="sales">sales</option>
+                        <option value="yearlySales">yearlySales</option>
+                    </select>
+                    <button class="Analyse-btn" onclick="dynamicChart()">
+                        Analyse
+                    </button>
+                </div>
+                <div class="description">
+                    Before Next Analysis do the page Refresh
+                </div>
+
+                <div class="main">
+                    <h2 id="filter">Flitered Result</h2>
+                    <div>
+                        <div class="container con">
+                            <h2>Filter Product Data</h2>
+                            <canvas
+                                id="canvas0"
+                                width="650"
+                                height="400"
+                            ></canvas>
+                        </div>
+                        <div class="container con">
+                            <h2>Filter Product Data</h2>
+                            <canvas
+                                id="canvas01"
+                                width="650"
+                                height="400"
+                            ></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="container con">
+                            <h2>Filter Product Data</h2>
+                            <canvas
+                                id="canvas02"
+                                width="650"
+                                height="400"
+                            ></canvas>
+                        </div>
+                        <div class="container con">
+                            <h2>Filter Product Data</h2>
+                            <canvas
+                                id="canvas03"
+                                width="650"
+                                height="400"
+                            ></canvas>
+                        </div>
+                    </div>
+                </div>
+                <h2>Other Analysis</h2>
+
+                <div class="main-1">
+                    <div class="container-1 con">
+                        <h2>Product & Sales</h2>
+                        <canvas id="canvas" width="650" height="400"></canvas>
+                    </div>
+                    <div class="container-2 con">
+                        <h2>Product Category & Sales</h2>
+                        <canvas id="canvas2" width="400" height="400"></canvas>
+                    </div>
+                </div>
+                <div class="main-2">
+                    <div class="container-3 con">
+                        <h2>Product Stock</h2>
+                        <canvas id="canvas3" width="650" height="400"></canvas>
+                    </div>
+                    <div class="container-4 con">
+                        <h2>Average Sales</h2>
+                        <canvas id="canvas4" width="650" height="400"></canvas>
+                    </div>
+                </div>
+                <div class="main-3">
+                    <div class="container-5 con">
+                        <h2>Monthly Sales</h2>
+                        <canvas id="canvas5" width="650" height="400"></canvas>
+                    </div>
+                    <div class="container-6 con">
+                        <h2>Sales and Stock</h2>
+                        <canvas id="canvas6" width="650" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="index.js"></script>
+    <script src="data.js"></script>
+</html>

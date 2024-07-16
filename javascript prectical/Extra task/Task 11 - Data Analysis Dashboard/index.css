@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container,
+.container-1,
+.container-2,
+.container-3,
+.container-4,
+.container-5,
+.container-6 {
+    margin: 30px;
+    height: auto;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.109);
+    border-radius: 10px;
+    width: fit-content;
+    min-width: 750px;
+    transition: all 0.3s;
+}
+.con:hover {
+    scale: 1.05;
+}
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+#canvas {
+    width: 100%;
+    margin: auto;
+}
+
+#canvas0,
+#canvas01,
+#canvas02,
+#canvas03 {
+    width: 100%;
+    margin: auto;
+}
+
+#canvas2 {
+    width: 100%;
+    margin: auto;
+}
+
+#canvas3 {
+    width: 100%;
+    margin: auto;
+}
+
+#canvas4 {
+    width: 100%;
+    margin: auto;
+}
+
+#canvas5,
+#canvas6 {
+    width: 100%;
+    margin: auto;
+}
+
+.main-1,
+.main-2,
+.main-3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main {
+    display: none;
+    margin: 50px 0 50px;
+}
+
+.main > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.main-container {
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+nav {
+    width: fit-content;
+    background-color: rgb(56, 0, 70);
+    color: white;
+    padding: 15px;
+    position: fixed;
+    height: 100%;
+}
+
+nav > div {
+    font-size: 30px;
+}
+
+ul {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+ul > li {
+    list-style: none;
+}
+
+.main-canvas {
+    margin-left: 200px;
+    padding: 30px;
+}
+
+.inputs {
+    padding: 8px 16px;
+    margin: auto;
+    position: absolute;
+    left: 48%;
+}
+
+.inputs > select {
+    padding: 8px 16px;
+}
+
+.hide {
+    display: none;
+}
+
+.description {
+    margin-top: 30px;
+    text-align: center;
+}
+.name{
+    padding: 8px 16px;
+    background-color: antiquewhite;
+    margin: 10px;
+}
+.filter-btn,
+.Analyse-btn {
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(56, 0, 70);
+    color: white;
+}
