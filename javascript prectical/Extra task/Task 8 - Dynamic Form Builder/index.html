@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Dynamic Form Builder</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input-data">
+                <input
+                    type="text"
+                    name="label"
+                    id="label"
+                    placeholder="Enter a label"
+                />
+                <input
+                    type="text"
+                    name="input"
+                    id="input"
+                    placeholder="Enter a input type"
+                />
+                <div>
+                    <button onclick="buildForm()">Create</button>
+                    <button onclick="buildDynamicForm()">With Prompt</button>
+                </div>
+            </div>
+
+            <form id="form">
+                <h1>Dynamically created From</h1>
+                <p>Enter your required tag and label</p>
+            </form>
+        </div>
+
+        <div class="error-box"></div>
+    </body>
+    <script src="index.js"></script>
+</html>
