@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Create table</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="input">
+                <input
+                    type="text"
+                    name="search"
+                    id="search"
+                    oninput="searchByName()"
+                    placeholder="Search"
+                />
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
